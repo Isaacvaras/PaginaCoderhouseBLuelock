@@ -5,7 +5,7 @@
     margin: auto;
     gap: 5px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 0.5fr repeat(5,1fr);
+    grid-template-rows: 0.5fr repeat(6,1fr);
     grid-template-areas:
     "header header header"
     "imagencentral imagencentral imagencentral"
@@ -17,8 +17,33 @@
     animation-iteration-count: 1;
     animation-duration: 1s;
     animation-timing-function: ease-in;
+    .menu{
+        div{
+            li{
+                display: inline-block;
+                a{
+                    color: $texto-color;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 40px;
+                    margin: 30px auto;
+                    font-family: "Bebas Neue";
+                }
+            }
+        }
+    }
+    .texto{
+        line-height: 1;
+        padding: 1rem;
+        font-family: "Sedan SC";
+        font-weight: 400;
+        font-style: normal;
+    }
     
     .imagencentral{
+        img{
+            width: 100%;
+        }
         background-color: $base-color;
         padding: 10px;
         grid-area: imagencentral;
@@ -60,6 +85,9 @@
         grid-area: imagen1se;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 80%;
+        }
     }
     .imagen2se{
         background-color: $base-color;
@@ -68,6 +96,9 @@
         grid-area: imagen2se;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 80%;
+        }
     }
     .imagen3se{
         background-color: $base-color;
@@ -76,6 +107,9 @@
         grid-area: imagen3se;
         border: solid 5px rgb(0, 0, 0);
         text-align: center;
+        img{
+            width: 80%;
+        }
     }
     .texto1se{
         background-color: $base-color;
@@ -108,9 +142,12 @@
         grid-area: footer;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 200px;
+        }
     }
     .boton{
-        font-size: 300%;
+        font-size: 200%;
         font-family: "Bebas Neue";
         font-weight: 400;
         font-style: normal;
@@ -120,74 +157,4 @@
         font-size: 150%;
     }
 }
-
-    @media screen and (max-width: 1400px) {
-        .mains{
-            width: 95%;
-            height: 100%;
-            display: grid;
-            margin: 20px auto;
-            gap: 5px;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: auto auto auto auto auto auto auto auto auto;
-            grid-template-areas:
-            "header header"
-            "imagencentral imagencentral"
-            "selec1 texto1se"
-            "imagen1se imagen1se"
-            "selec2 texto2se"
-            "imagen2se imagen2se"
-            "selec3 texto3se"
-            "imagen3se imagen3se"
-            "footer contacto" 
-            ;
-            }
-            .imagencentral img{
-                opacity: 0;
-            }
-            .imagencentral{
-                background-image: url(../Multimedia/imagen\ central2.jpg);
-                opacity: 0.5;
-            }
-           
-        
     
-    }
-    @media screen and (max-width: 1080px) {
-        .mains{
-            width: 95%;
-            height: 100%;
-            display: grid;
-            margin: 20px auto;
-            gap: 5px;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
-            grid-template-areas:
-            "header"
-            "imagencentral"
-            "selec1" 
-            "texto1se"
-            "imagen1se"
-            "selec2" 
-            "texto2se"
-            "imagen2se"
-            "selec3" 
-            "texto3se"
-            "imagen3se"
-            "footer" 
-            "contacto";
-            }
-            .imagencentral img{
-                opacity: 0;
-            }
-            .imagencentral{
-                background-image: url(../Multimedia/imagen\ central\ 3.jpg);
-                opacity: 0.5;
-            }
-            .Contacto{
-                width: 50%;
-                text-align: center;
-                margin: auto;
-            }
-    
-    }

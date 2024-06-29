@@ -161,30 +161,12 @@ main .Contacto {
   margin: auto;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr repeat(6, 1fr);
+  grid-template-rows: 0.5fr repeat(5, 1fr);
   grid-template-areas: "header header header" "imagencentral imagencentral imagencentral" "selec1 imagen1se texto1se" "selec2 imagen2se texto2se" "selec3 imagen3se texto3se" "footer footer contacto";
   animation-name: Entrada;
   animation-iteration-count: 1;
   animation-duration: 1s;
   animation-timing-function: ease-in;
-}
-.mains .menu div li {
-  display: inline-block;
-}
-.mains .menu div li a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 40px;
-  margin: 30px auto;
-  font-family: "Bebas Neue";
-}
-.mains .texto {
-  line-height: 1;
-  padding: 1rem;
-  font-family: "Sedan SC";
-  font-weight: 400;
-  font-style: normal;
 }
 .mains .imagencentral {
   background-color: #000000;
@@ -192,9 +174,6 @@ main .Contacto {
   grid-area: imagencentral;
   border: solid 5px rgb(0, 0, 0);
   text-align: center;
-}
-.mains .imagencentral img {
-  width: 100%;
 }
 .mains .imagencentral img {
   opacity: 0.5;
@@ -232,9 +211,6 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
-.mains .imagen1se img {
-  width: 80%;
-}
 .mains .imagen2se {
   background-color: #000000;
   color: #0000ff;
@@ -243,9 +219,6 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
-.mains .imagen2se img {
-  width: 80%;
-}
 .mains .imagen3se {
   background-color: #000000;
   color: #0000ff;
@@ -253,9 +226,6 @@ main .Contacto {
   grid-area: imagen3se;
   border: solid 5px rgb(0, 0, 0);
   text-align: center;
-}
-.mains .imagen3se img {
-  width: 80%;
 }
 .mains .texto1se {
   background-color: #000000;
@@ -289,11 +259,8 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
-.mains .footer img {
-  width: 200px;
-}
 .mains .boton {
-  font-size: 200%;
+  font-size: 300%;
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
@@ -303,6 +270,49 @@ main .Contacto {
   font-size: 150%;
 }
 
+@media screen and (max-width: 1400px) {
+  .mains {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
+  }
+  .imagencentral img {
+    opacity: 0;
+  }
+  .imagencentral {
+    background-image: url(../Multimedia/imagen\ central2.jpg);
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mains {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .imagencentral img {
+    opacity: 0;
+  }
+  .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .Contacto {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
 .partidopag {
   width: 95%;
   height: 100%;
@@ -695,6 +705,7 @@ main .Contacto {
 @media screen and (max-width: 480px) {
   .mains {
     width: 100%;
+    height: 100%;
     display: grid;
     margin: auto;
     gap: 5px;
