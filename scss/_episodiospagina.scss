@@ -38,6 +38,9 @@
         grid-area: EpisodiosUno;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoUno{
         background-color: $base-color;
@@ -54,6 +57,9 @@
         grid-area: EpisodiosDos;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoDos{
         background-color: $base-color;
@@ -70,6 +76,9 @@
         grid-area: EpisodiosTres;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoTres{
         background-color: $base-color;
@@ -87,6 +96,9 @@
         grid-area: EpisodiosCuatro;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoCuatro{
         background-color: $base-color;
@@ -103,6 +115,9 @@
         grid-area: EpisodiosCinco;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoCinco{
         background-color: $base-color;
@@ -119,6 +134,9 @@
         grid-area: EpisodiosSeis;
         border: solid 5px $border-color;
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
     .ContextoSeis{
         background-color: $base-color;
@@ -127,6 +145,17 @@
         grid-area: ContextoSeis;
         border: solid 5px $border-color;
         text-align: center;
+    }
+    .footer{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: footer;
+        border: solid 5px $border-color;
+        text-align: center;
+        img{
+            width: 200px;
+        }
     }
     
 

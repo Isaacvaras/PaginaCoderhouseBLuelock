@@ -194,9 +194,6 @@ main .Contacto {
   text-align: center;
 }
 .mains .imagencentral img {
-  width: 100%;
-}
-.mains .imagencentral img {
   opacity: 0.5;
   width: 100%;
 }
@@ -388,6 +385,17 @@ main .Contacto {
   text-align: left;
   padding: 20px;
 }
+.partidopag .footer {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: footer;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.partidopag .footer img {
+  width: 200px;
+}
 
 .MainEpi {
   width: 95%;
@@ -425,6 +433,9 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
+.MainEpi .EpisodiosUno img {
+  width: 100%;
+}
 .MainEpi .ContextoUno {
   background-color: #000000;
   color: #ffffff;
@@ -440,6 +451,9 @@ main .Contacto {
   grid-area: EpisodiosDos;
   border: solid 5px #080808;
   text-align: center;
+}
+.MainEpi .EpisodiosDos img {
+  width: 100%;
 }
 .MainEpi .ContextoDos {
   background-color: #000000;
@@ -457,6 +471,9 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
+.MainEpi .EpisodiosTres img {
+  width: 100%;
+}
 .MainEpi .ContextoTres {
   background-color: #000000;
   color: #ffffff;
@@ -472,6 +489,9 @@ main .Contacto {
   grid-area: EpisodiosCuatro;
   border: solid 5px #080808;
   text-align: center;
+}
+.MainEpi .EpisodiosCuatro img {
+  width: 100%;
 }
 .MainEpi .ContextoCuatro {
   background-color: #000000;
@@ -489,6 +509,9 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
+.MainEpi .EpisodiosCinco img {
+  width: 100%;
+}
 .MainEpi .ContextoCinco {
   background-color: #000000;
   color: #ffffff;
@@ -505,6 +528,9 @@ main .Contacto {
   border: solid 5px #080808;
   text-align: center;
 }
+.MainEpi .EpisodiosSeis img {
+  width: 100%;
+}
 .MainEpi .ContextoSeis {
   background-color: #000000;
   color: #ffffff;
@@ -512,6 +538,17 @@ main .Contacto {
   grid-area: ContextoSeis;
   border: solid 5px #080808;
   text-align: center;
+}
+.MainEpi .footer {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: footer;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .footer img {
+  width: 200px;
 }
 
 @keyframes un_giro {
@@ -642,7 +679,7 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat 2, 1fr;
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
   }
@@ -940,7 +977,7 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
   }
@@ -969,7 +1006,7 @@ main .Contacto {
     display: grid;
     margin: 15px auto;
     gap: 5px;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
   }

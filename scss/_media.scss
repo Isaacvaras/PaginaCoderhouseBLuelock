@@ -167,7 +167,7 @@
             display: grid;
             margin: 20px auto;
             gap: 5px;
-            grid-template-columns: auto auto;
+            grid-template-columns: repeat (2,1fr);
             grid-template-rows: repeat(9,auto);
             grid-template-areas:
             "header header"
@@ -639,7 +639,7 @@
                 display: grid;
                 margin: 20px auto;
                 gap: 5px;
-                grid-template-columns: repeat(2,auto);
+                grid-template-columns: repeat(1,auto);
                 grid-template-rows: repeat(10,auto);
                 grid-template-areas:
                 "header"
@@ -692,7 +692,7 @@
                 display: grid;
                 margin: 15px auto;
                 gap: 5px;
-                grid-template-columns: repeat(2,auto);
+                grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(10,auto);
                 grid-template-areas:
                 "header"

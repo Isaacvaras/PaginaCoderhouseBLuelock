@@ -90,4 +90,16 @@
         }
 
     }
+    .footer{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: footer;
+        border: solid 5px $border-color;
+        text-align: center;
+        img{
+            width: 200px;
+        }
+    }
+    
 }
