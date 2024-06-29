@@ -679,9 +679,9 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
   }
   .mains .imagencentral img {
     opacity: 0;
@@ -690,9 +690,20 @@ main .Contacto {
     background-image: url(../Multimedia/imagen\ central2.jpg);
     opacity: 0.5;
   }
-  .mains .menu div li a {
-    font-size: 35px;
+  .mains .Contacto {
+    width: 50%;
+    text-align: center;
     margin: auto;
+  }
+  .mains .menu div li a {
+    font-size: 30px;
+    margin: auto;
+  }
+  .mains .logonav {
+    width: 300px;
+  }
+  .mains .logoMenu {
+    width: 30px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -702,7 +713,7 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(13, auto);
     grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
   }

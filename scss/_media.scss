@@ -161,46 +161,60 @@
 }
 /*Media querries de paginas Seleccion "Partidos y Personajes"*/
 @media screen and (max-width: 1650px) {
-        .mains{
-            width: 95%;
-            height: 100%;
-            display: grid;
-            margin: 20px auto;
-            gap: 5px;
-            grid-template-columns: repeat (2,1fr);
-            grid-template-rows: repeat(9,auto);
-            grid-template-areas:
-            "header header"
-            "imagencentral imagencentral"
-            "selec1 texto1se"
-            "imagen1se imagen1se"
-            "selec2 texto2se"
-            "imagen2se imagen2se"
-            "selec3 texto3se"
-            "imagen3se imagen3se"
-            "footer contacto" 
-            ;
-            
-            .imagencentral img{
-                opacity: 0;
-            }
-            .imagencentral{
-                background-image: url(../Multimedia/imagen\ central2.jpg);
-                opacity: 0.5;
-            }
-            .menu{
-                div{
-                    li{
-                        a{
-                            font-size: 35px;
-                            margin: auto;
-                        }
+    .mains{
+        width: 95%;
+        height: 100%;
+        display: grid;
+        margin: 20px auto;
+        gap: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13,auto);
+        grid-template-areas:
+        "header"
+        "imagencentral"
+        "selec1" 
+        "texto1se"
+        "imagen1se"
+        "selec2" 
+        "texto2se"
+        "imagen2se"
+        "selec3" 
+        "texto3se"
+        "imagen3se"
+        "footer" 
+        "contacto";
+        
+        .imagencentral img{
+            opacity: 0;
+        }
+        .imagencentral{
+            background-image: url(../Multimedia/imagen\ central2.jpg);
+            opacity: 0.5;
+        }
+        .Contacto{
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 30px;
+                        margin: auto;
                     }
                 }
             }
-
+        }
+        .logonav{
+            width: 300px;
+        }
+        .logoMenu{
+            width: 30px;
         }
     }
+
+}
     @media screen and (max-width: 1024px) {
         .mains{
             width: 98%;
@@ -208,7 +222,7 @@
             display: grid;
             margin: 20px auto;
             gap: 5px;
-            grid-template-columns: auto;
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(13,auto);
             grid-template-areas:
             "header"
