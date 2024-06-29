@@ -316,23 +316,11 @@ main .Contacto {
 }
 .partidopag .imagencentral {
   background-color: #000000;
-  padding: 10px;
   grid-area: imagencentral;
   border: solid 5px rgb(0, 0, 0);
   text-align: center;
 }
 .partidopag .imagencentral img {
-  opacity: 0.5;
-  width: 100%;
-}
-.partidopag .partidopag .imagencentral {
-  background-color: #000000;
-  padding: 10px;
-  grid-area: imagencentral;
-  border: solid 5px rgb(0, 0, 0);
-  text-align: center;
-}
-.partidopag .partidopag .imagencentral img {
   opacity: 0.5;
   width: 100%;
 }
@@ -345,11 +333,11 @@ main .Contacto {
   text-align: center;
 }
 .partidopag .tablapuntos table {
-  border: 4px solid;
+  border: 2px solid;
   background-color: #091f31;
-  width: 95%;
+  width: 100%;
   text-align: center;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 .partidopag .tablapuntos tr {
   border: 2px solid;
@@ -369,6 +357,7 @@ main .Contacto {
   text-align: center;
 }
 .partidopag .resultados table {
+  width: 100%;
   border: 4px solid;
 }
 .partidopag .resultados table a {
@@ -861,6 +850,12 @@ main .Contacto {
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
   }
+  .partidopag .tablapuntos table {
+    font-size: 10px;
+  }
+  .partidopag .resultados table {
+    font-size: 10px;
+  }
   .partidopag .imagencentral {
     background-image: url(../Multimedia/imagencentral1.jpg);
     opacity: 0.5;
@@ -881,11 +876,17 @@ main .Contacto {
     width: 100%;
     height: 100%;
     display: grid;
-    margin: 20px auto;
+    margin: 5px auto;
     gap: 5px;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
+  }
+  .partidopag .tablapuntos table {
+    font-size: 10px;
+  }
+  .partidopag .resultados table {
+    font-size: 10px;
   }
   .partidopag .imagencentral {
     background-image: url(../Multimedia/imagen\ central\ 3.jpg);
