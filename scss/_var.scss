@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Sedan SC";
+    src: url(../fonts/Sedan_SC/SedanSC-Regular.ttf);
+    font-family: "Bebas Neue";
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+.logonav{
+    width: 400px;
+}
+.logomenu{
+    width: 20px;
+}
+.h2{
+    @include textosgrandes 
+}.h1{
+    @include textosgrandes
+}

@@ -1,0 +1,93 @@
+.partidopag{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows:repeat(5,auto);
+    grid-template-areas:
+    "header header"
+    "imagencentral imagencentral"
+    "tablapuntos tablapuntos"
+    "resultados resultados "
+    "footer footer";
+    animation-name: Entrada;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    .imagencentral{
+        background-color: #000000;
+        padding: 10px;
+        grid-area: imagencentral;
+        border: solid 5px rgb(0, 0, 0);
+        text-align: center;
+    }
+    .imagencentral img{
+        opacity: 0.5;
+        width: 100%;
+    }
+    .partidopag .imagencentral {
+        background-color: #000000;
+        padding: 10px;
+        grid-area: imagencentral;
+        border: solid 5px rgb(0, 0, 0);
+        text-align: center;
+      }
+      .partidopag .imagencentral img {
+        opacity: 0.5;
+        width: 100%;
+      }
+    .tablapuntos{
+        background-color: $base-color;
+        color:  rgb(255, 255, 255);
+        padding: 10px;
+        grid-area: tablapuntos;
+        border: solid 5px rgb(255, 255, 255);
+        text-align: center;
+        table{
+            border: 4px solid;
+            background-color: #091f31;
+            width: 95%;
+            text-align: center;
+            margin: 10px auto;
+        }
+        tr{
+            border: 2px solid;
+            td{
+                border: 2px solid;
+            }
+            th{
+                border: 2px solid;
+            }
+        }
+
+    }
+   
+    .resultados{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: resultados;
+        border: solid 5px $texto-color;
+        text-align: center;
+        table{
+            border: 4px solid;
+            a{
+                text-decoration: none;
+                color: $texto-color;
+            }
+        }
+        tr{
+            border: 2px solid;
+            td{
+                border: 2px solid;
+            }
+        }
+        ol{
+            text-align: left;
+            padding: 20px;
+        }
+
+    }
+}

@@ -1,0 +1,13 @@
+body{
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 48%, rgba(2,0,36,1) 93%);
+}
+@mixin textosgrandes{
+    font-family: "Sedan SC";
+    font-weight: 400;
+    font-style: normal;
+}
+$base-color: #000000;
+$base-color-main: #1c4c96;
+$texto-color: #ffffff;
+$texto-color-main: #0000ff;
+$border-color: #080808;

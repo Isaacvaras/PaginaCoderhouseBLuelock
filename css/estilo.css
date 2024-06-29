@@ -1,0 +1,951 @@
+body {
+  background: radial-gradient(circle, rgb(0, 212, 255) 0%, rgb(9, 9, 121) 48%, rgb(2, 0, 36) 93%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Sedan SC";
+  src: url(../fonts/Sedan_SC/SedanSC-Regular.ttf);
+  font-family: "Bebas Neue";
+  src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+.logonav {
+  width: 400px;
+}
+
+.logomenu {
+  width: 20px;
+}
+
+.h2 {
+  font-family: "Sedan SC";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h1 {
+  font-family: "Sedan SC";
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  margin: auto;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr 0.2fr 0.2fr 0.2fr;
+  grid-template-areas: "header header header" "fotos1 fotos1 historia" "fotos1 fotos1 intro" "anime fotos2 fotos2" "personajeprincipal fotos2 fotos2" "footer footer contacto";
+  animation-name: Entrada;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+main .menu div li {
+  display: inline-block;
+}
+main .menu div li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 30px auto;
+  font-family: "Bebas Neue";
+}
+main .texto {
+  line-height: 1;
+  padding: 1rem;
+  font-family: "Sedan SC";
+  font-weight: 400;
+  font-style: normal;
+}
+main .historia img {
+  width: 180px;
+  opacity: 0.5;
+}
+main .header {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+  grid-area: header;
+  border: solid 5px black;
+}
+main .fotos1 {
+  width: 100%;
+  background-color: #1c4c96;
+  color: #1c4c96;
+  text-align: center;
+  padding: 10px;
+  grid-area: fotos1;
+  border: solid 5px #080808;
+}
+main .historia {
+  background-color: #1c4c96;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  grid-area: historia;
+  border: solid 5px #080808;
+}
+main .intro {
+  background-color: #1c4c96;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  grid-area: intro;
+  border: solid 5px rgb(37, 37, 37);
+}
+main .anime {
+  background-color: #1c4c96;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  grid-area: anime;
+  border: solid 5px #080808;
+}
+main .personajeprincipal {
+  background-color: #1c4c96;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  grid-area: personajeprincipal;
+}
+main .personajeprincipal img {
+  width: 35%;
+}
+main .fotos2 {
+  background-image: url(../Multimedia/isagifondo.jpg);
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  grid-area: fotos2;
+  border: solid 5px #080808;
+}
+main .fotos2 img {
+  width: 250px;
+}
+main .footer {
+  background-color: #000000;
+  color: blue;
+  padding: 10px;
+  grid-area: footer;
+  border: solid 5px #080808;
+  text-align: center;
+  animation-name: un_giro;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 4s;
+}
+main .Contacto {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: contacto;
+  border: solid 5px #080808;
+  height: 100%;
+}
+
+.mains {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  margin: auto;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr repeat(5, 1fr);
+  grid-template-areas: "header header header" "imagencentral imagencentral imagencentral" "selec1 imagen1se texto1se" "selec2 imagen2se texto2se" "selec3 imagen3se texto3se" "footer footer contacto";
+  animation-name: Entrada;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.mains .imagencentral {
+  background-color: #000000;
+  padding: 10px;
+  grid-area: imagencentral;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.mains .imagencentral img {
+  opacity: 0.5;
+  width: 100%;
+}
+.mains .selec1 {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: selec1;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .selec2 {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: selec2;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .selec3 {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: selec3;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .imagen1se {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: imagen1se;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .imagen2se {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: imagen2se;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .imagen3se {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: imagen3se;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.mains .texto1se {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: texto1se;
+  border: solid 5px #ffffff;
+  text-align: center;
+}
+.mains .texto2se {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: texto2se;
+  border: solid 5px #ffffff;
+  text-align: center;
+}
+.mains .texto3se {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: texto3se;
+  border: solid 5px #ffffff;
+  text-align: center;
+}
+.mains .footer {
+  background-color: #000000;
+  color: #0000ff;
+  padding: 10px;
+  grid-area: footer;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.mains .boton {
+  font-size: 300%;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+}
+.mains .equipos {
+  font-family: "Bebas Neue";
+  font-size: 150%;
+}
+
+@media screen and (max-width: 1400px) {
+  .mains {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
+  }
+  .imagencentral img {
+    opacity: 0;
+  }
+  .imagencentral {
+    background-image: url(../Multimedia/imagen\ central2.jpg);
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .mains {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .imagencentral img {
+    opacity: 0;
+  }
+  .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .Contacto {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+}
+.partidopag {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  margin: 20px auto;
+  gap: 5px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header" "imagencentral imagencentral" "tablapuntos tablapuntos" "resultados resultados " "footer footer";
+  animation-name: Entrada;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.partidopag .imagencentral {
+  background-color: #000000;
+  padding: 10px;
+  grid-area: imagencentral;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.partidopag .imagencentral img {
+  opacity: 0.5;
+  width: 100%;
+}
+.partidopag .partidopag .imagencentral {
+  background-color: #000000;
+  padding: 10px;
+  grid-area: imagencentral;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.partidopag .partidopag .imagencentral img {
+  opacity: 0.5;
+  width: 100%;
+}
+.partidopag .tablapuntos {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  grid-area: tablapuntos;
+  border: solid 5px rgb(255, 255, 255);
+  text-align: center;
+}
+.partidopag .tablapuntos table {
+  border: 4px solid;
+  background-color: #091f31;
+  width: 95%;
+  text-align: center;
+  margin: 10px auto;
+}
+.partidopag .tablapuntos tr {
+  border: 2px solid;
+}
+.partidopag .tablapuntos tr td {
+  border: 2px solid;
+}
+.partidopag .tablapuntos tr th {
+  border: 2px solid;
+}
+.partidopag .resultados {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: resultados;
+  border: solid 5px #ffffff;
+  text-align: center;
+}
+.partidopag .resultados table {
+  border: 4px solid;
+}
+.partidopag .resultados table a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.partidopag .resultados tr {
+  border: 2px solid;
+}
+.partidopag .resultados tr td {
+  border: 2px solid;
+}
+.partidopag .resultados ol {
+  text-align: left;
+  padding: 20px;
+}
+
+.MainEpi {
+  width: 95%;
+  height: 100%;
+  display: grid;
+  margin: auto;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(5, 1fr);
+  grid-template-areas: "header header header header" "imagencentral imagencentral imagencentral imagencentral" "EpisodiosUno ContextoUno EpisodiosDos ContextoDos" "EpisodiosTres ContextoTres EpisodiosCuatro ContextoCuatro" "EpisodiosCinco ContextoCinco EpisodiosSeis ContextoSeis" "footer footer contacto contacto";
+  animation-name: Entrada;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+.MainEpi .EpiImagen {
+  width: 100%;
+}
+.MainEpi .imagencentral {
+  background-color: #000000;
+  padding: 10px;
+  grid-area: imagencentral;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .imagencentral img {
+  opacity: 0.5;
+  width: 100%;
+}
+.MainEpi .EpisodiosUno {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosUno;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoUno {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoUno;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .EpisodiosDos {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosDos;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoDos {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoDos;
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+}
+.MainEpi .EpisodiosTres {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosTres;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoTres {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoTres;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .EpisodiosCuatro {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosCuatro;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoCuatro {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoCuatro;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .EpisodiosCinco {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosCinco;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoCinco {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoCinco;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .EpisodiosSeis {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: EpisodiosSeis;
+  border: solid 5px #080808;
+  text-align: center;
+}
+.MainEpi .ContextoSeis {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  grid-area: ContextoSeis;
+  border: solid 5px #080808;
+  text-align: center;
+}
+
+@keyframes un_giro {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 0%;
+  }
+  75% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes Entrada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .main {
+    width: 95%;
+    margin: 20px auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header" "fotos1 fotos1" "intro historia" "fotos2 fotos2" "personajeprincipal anime" "footer contacto";
+  }
+  .main .historia img {
+    width: 200px;
+    opacity: 0.5;
+  }
+  .main .footer img {
+    width: 400px;
+  }
+  .main .fotos2 {
+    background-size: 100%;
+  }
+  .main .menu div li a {
+    font-size: 35px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 98%;
+    height: 100%;
+    margin: 20px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "fotos1" "intro" "historia" "fotos2" "personajeprincipal" "anime" "footer" "contacto";
+  }
+  .main .logonav {
+    width: 300px;
+  }
+  .main .logomenu {
+    width: 30px;
+  }
+  .main .menu div li a {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "fotos1" "intro" "historia" "fotos2" "personaje principal" "anime" "contacto" "footer";
+  }
+  .main .header {
+    flex-direction: column;
+  }
+  .main .logonav {
+    width: 200px;
+  }
+  .main .logomenu {
+    width: 20px;
+  }
+  .main .fotos2 {
+    background-size: 100%;
+  }
+  .main .menu div li a {
+    font-size: 20px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    margin: 15px auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header" "fotos1" "intro" "historia" "fotos2" "anime" "personaje principal" "contacto" "footer";
+  }
+  .main .header {
+    flex-direction: column;
+  }
+  .main .logonav {
+    width: 150px;
+  }
+  .main .logomenu {
+    width: 15px;
+  }
+  .main .fotos2 {
+    background-size: 100%;
+  }
+  .main .menu div li a {
+    font-size: 15px;
+    margin: auto;
+  }
+}
+/*Media querries de paginas Seleccion "Partidos y Personajes"*/
+@media screen and (max-width: 1650px) {
+  .mains {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
+  }
+  .mains .imagencentral img {
+    opacity: 0;
+  }
+  .mains .imagencentral {
+    background-image: url(../Multimedia/imagen\ central2.jpg);
+    opacity: 0.5;
+  }
+  .mains .menu div li a {
+    font-size: 35px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mains {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .mains .imagencentral img {
+    opacity: 0;
+  }
+  .mains .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .mains .Contacto {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .mains .menu div li a {
+    font-size: 30px;
+    margin: auto;
+  }
+  .mains .logonav {
+    width: 300px;
+  }
+  .mains .logomenu {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mains {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .mains .imagencentral img {
+    opacity: 0;
+  }
+  .mains .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .mains .Contacto {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .mains .menu div li a {
+    font-size: 20px;
+    margin: auto;
+  }
+  .mains .logonav {
+    width: 200px;
+  }
+  .mains .logomenu {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mains {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 15px auto;
+    gap: 5px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .mains .imagencentral img {
+    opacity: 0;
+  }
+  .mains .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .mains .Contacto {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .mains .menu div li a {
+    font-size: 15px;
+    margin: auto;
+  }
+  .mains .logonav {
+    width: 150px;
+  }
+  .mains .logomenu {
+    width: 15px;
+  }
+}
+/*media querries de pagina partidos*/
+@media screen and (max-width: 1650px) {
+  .partidopag {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
+  }
+  .partidopag .imagencentral img {
+    opacity: 0;
+  }
+  .partidopag .imagencentral {
+    background-image: url(../Multimedia/imagen\ central2.jpg);
+    opacity: 0.5;
+  }
+  .partidopag .menu div li a {
+    font-size: 35px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .partidopag {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
+  }
+  .partidopag .imagencentral {
+    background-image: url(../Multimedia/imagencentral1.jpg);
+    opacity: 0.5;
+  }
+  .partidopag .menu div li a {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partidopag {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
+  }
+  .partidopag .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .partidopag .menu div li a {
+    font-size: 20px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .partidopag {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 15px auto;
+    gap: 5px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header" "imagencentral" "tablapuntos" "resultados " "footer";
+  }
+  .partidopag .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .partidopag .menu div li a {
+    font-size: 15px;
+    margin: auto;
+  }
+}
+/*media querries de pagina Episodios*/
+@media screen and (max-width: 1650px) {
+  .MainEpi {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header header" "imagencentral imagencentral" "EpisodiosUno ContextoUno" "EpisodiosDos ContextoDos" "EpisodiosTres ContextoTres" "EpisodiosCuatro ContextoCuatro" "EpisodiosCinco ContextoCinco" "EpisodiosSeis ContextoSeis" "footer footer" "contacto contacto";
+  }
+  .MainEpi .imagencentral img {
+    opacity: 0;
+  }
+  .MainEpi .imagencentral {
+    background-image: url(../Multimedia/imagen\ central2.jpg);
+    opacity: 0.5;
+  }
+  .MainEpi .menu div li a {
+    font-size: 35px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .MainEpi {
+    width: 98%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header header" "imagencentral imagencentral" "EpisodiosUno ContextoUno" "EpisodiosDos ContextoDos" "EpisodiosTres ContextoTres" "EpisodiosCuatro ContextoCuatro" "EpisodiosCinco ContextoCinco" "EpisodiosSeis ContextoSeis" "footer footer" "contacto contacto";
+  }
+  .MainEpi .imagencentral img {
+    opacity: 0;
+  }
+  .MainEpi .imagencentral {
+    background-image: url(../Multimedia/imagencentral1.jpg);
+    opacity: 0.5;
+  }
+  .MainEpi .menu div li a {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .MainEpi {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 20px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
+  }
+  .MainEpi .imagencentral img {
+    opacity: 0;
+  }
+  .MainEpi .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .MainEpi .menu div li a {
+    font-size: 20px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .MainEpi {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 15px auto;
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
+  }
+  .MainEpi .imagencentral img {
+    opacity: 0;
+  }
+  .MainEpi .imagencentral {
+    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+    opacity: 0.5;
+  }
+  .MainEpi .menu div li a {
+    font-size: 15px;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,688 @@
+@media screen and (max-width: 1650px) {
+    .main{
+        width: 95%;
+        margin: 20px auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+        "header header"
+        "fotos1 fotos1"
+        "intro historia"
+        "fotos2 fotos2"
+        "personajeprincipal anime"
+        "footer contacto";
+        .historia{
+            img{
+                width: 200px;
+                opacity: 0.5;
+            }
+        }
+        .footer{
+            img{
+                width: 400px;
+            }
+        }
+        .fotos2{
+            background-size: 100%;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 35px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .main{
+        width: 98%;
+        height: 100%;
+        margin: 20px auto;
+        grid-template-columns:auto ;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "header"
+        "fotos1"
+        "intro"
+        "historia"
+        "fotos2"
+        "personajeprincipal"
+        "anime"
+        "footer"
+        "contacto";
+        .logonav{
+            width: 300px;
+        }
+        .logomenu{
+            width: 30px;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 30px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .main{
+        width: 100%;
+        height: 100%;
+        margin: 20px auto;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "header"
+        "fotos1"
+        "intro"
+        "historia"
+        "fotos2"
+        "personaje principal"
+        "anime"
+        "contacto"
+        "footer"
+        ;
+        .header{
+            flex-direction: column;
+        }
+        .logonav{
+            width: 200px;
+        }
+        .logomenu{
+            width: 20px;
+        }
+        .fotos2{
+            background-size: 100%;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 20px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 320px){
+    .main{
+        width: 100%;
+        height: 100%;
+        margin: 15px auto;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas: 
+        "header"
+        "fotos1"
+        "intro"
+        "historia"
+        "fotos2"
+        "anime"
+        "personaje principal"
+        "contacto"
+        "footer"
+        ;
+        .header{
+            flex-direction: column;
+        }
+        .logonav{
+            width: 150px;
+        }
+        .logomenu{
+            width: 15px;
+        }
+        .fotos2{
+            background-size: 100%;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 15px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/*Media querries de paginas Seleccion "Partidos y Personajes"*/
+@media screen and (max-width: 1650px) {
+        .mains{
+            width: 95%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(9,auto);
+            grid-template-areas:
+            "header header"
+            "imagencentral imagencentral"
+            "selec1 texto1se"
+            "imagen1se imagen1se"
+            "selec2 texto2se"
+            "imagen2se imagen2se"
+            "selec3 texto3se"
+            "imagen3se imagen3se"
+            "footer contacto" 
+            ;
+            
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central2.jpg);
+                opacity: 0.5;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 35px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .mains{
+            width: 98%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(13,auto);
+            grid-template-areas:
+            "header"
+            "imagencentral"
+            "selec1" 
+            "texto1se"
+            "imagen1se"
+            "selec2" 
+            "texto2se"
+            "imagen2se"
+            "selec3" 
+            "texto3se"
+            "imagen3se"
+            "footer" 
+            "contacto";
+            
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                opacity: 0.5;
+            }
+            .Contacto{
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 30px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .logonav{
+                width: 300px;
+            }
+            .logomenu{
+                width: 30px;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 480px) {
+        .mains{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(13,auto);
+            grid-template-areas:
+            "header"
+            "imagencentral"
+            "selec1" 
+            "texto1se"
+            "imagen1se"
+            "selec2" 
+            "texto2se"
+            "imagen2se"
+            "selec3" 
+            "texto3se"
+            "imagen3se"
+            "footer" 
+            "contacto";
+            
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                opacity: 0.5;
+            }
+            .Contacto{
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 20px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .logonav{
+                width: 200px;
+            }
+            .logomenu{
+                width: 20px;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 320px) {
+        .mains{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            margin: 15px auto;
+            gap: 5px;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(13,auto);
+            grid-template-areas:
+            "header"
+            "imagencentral"
+            "selec1" 
+            "texto1se"
+            "imagen1se"
+            "selec2" 
+            "texto2se"
+            "imagen2se"
+            "selec3" 
+            "texto3se"
+            "imagen3se"
+            "footer" 
+            "contacto";
+            
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                opacity: 0.5;
+            }
+            .Contacto{
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 15px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .logonav{
+                width: 150px;
+            }
+            .logomenu{
+                width: 15px;
+            }
+        }
+    
+    }
+    
+    /*media querries de pagina partidos*/
+
+    @media screen and (max-width:1650px){
+        .partidopag{
+            width: 95%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: repeat(1,auto);
+            grid-template-rows: repeat(5,auto);
+            grid-template-areas:
+            "header"
+            "imagencentral"
+            "tablapuntos"
+            "resultados "
+            "footer";
+            .imagencentral{
+                img{
+                    opacity: 0;
+                }
+                
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central2.jpg);
+                opacity: 0.5;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 35px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width:1024px){
+    .partidopag{
+        width: 98%;
+        height: 100%;
+        display: grid;
+        margin: 20px auto;
+        gap: 5px;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header"
+        "imagencentral"
+        "tablapuntos"
+        "resultados "
+        "footer";
+        .imagencentral{
+            background-image: url(../Multimedia/imagencentral1.jpg);
+            opacity: 0.5;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 30px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+}
+}
+@media screen and (max-width:480px){
+    .partidopag{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        margin: 20px auto;
+        gap: 5px;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header"
+        "imagencentral"
+        "tablapuntos"
+        "resultados "
+        "footer";
+        .imagencentral{
+            background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+            opacity: 0.5;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 20px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+}
+}
+@media screen and (max-width:320px){
+    .partidopag{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        margin: 15px auto;
+        gap: 5px;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header"
+        "imagencentral"
+        "tablapuntos"
+        "resultados "
+        "footer";
+        .imagencentral{
+            background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+            opacity: 0.5;
+        }
+        .menu{
+            div{
+                li{
+                    a{
+                        font-size: 15px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+}
+}
+/*media querries de pagina Episodios*/
+@media screen and (max-width:1650px){
+    .MainEpi{
+            width: 95%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,auto);
+            grid-template-areas:
+            "header header"
+            "imagencentral imagencentral"
+            "EpisodiosUno ContextoUno" 
+            "EpisodiosDos ContextoDos"
+            "EpisodiosTres ContextoTres" 
+            "EpisodiosCuatro ContextoCuatro"
+            "EpisodiosCinco ContextoCinco" 
+            "EpisodiosSeis ContextoSeis"
+            "footer footer" 
+            "contacto contacto";
+            .imagencentral{
+                img{
+                    opacity: 0;
+                }
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central2.jpg);
+                opacity: 0.5;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 35px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+    }
+}
+@media screen and (max-width:1024px){
+    .MainEpi{
+            width: 98%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(10,auto);
+            grid-template-areas:
+            "header header"
+            "imagencentral imagencentral"
+            "EpisodiosUno ContextoUno" 
+            "EpisodiosDos ContextoDos"
+            "EpisodiosTres ContextoTres" 
+            "EpisodiosCuatro ContextoCuatro"
+            "EpisodiosCinco ContextoCinco" 
+            "EpisodiosSeis ContextoSeis"
+            "footer footer" 
+            "contacto contacto";
+            .imagencentral{
+                img{
+                    opacity: 0;
+                }
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagencentral1.jpg);
+                opacity: 0.5;
+            }
+            .menu{
+                div{
+                    li{
+                        a{
+                            font-size: 30px;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+
+
+            }
+    }
+    @media screen and (max-width:480px){
+        .MainEpi{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                margin: 20px auto;
+                gap: 5px;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(10,auto);
+                grid-template-areas:
+                "header"
+                "imagencentral"
+                "EpisodiosUno" 
+                "ContextoUno" 
+                "EpisodiosDos" 
+                "ContextoDos"
+                "EpisodiosTres" 
+                "ContextoTres" 
+                "EpisodiosCuatro" 
+                "ContextoCuatro"
+                "EpisodiosCinco" 
+                "ContextoCinco" 
+                "EpisodiosSeis" 
+                "ContextoSeis"
+                "footer" 
+                "contacto";
+                .imagencentral{
+                    img{
+                        opacity: 0;
+                    }
+                }
+                .imagencentral{
+                    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                    opacity: 0.5;
+                }
+                .menu{
+                    div{
+                        li{
+                            a{
+                                font-size: 20px;
+                                margin: auto;
+                            }
+                        }
+                    }
+        
+    
+    
+
+            }
+        }
+    }
+    @media screen and (max-width:320px){
+        .MainEpi{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                margin: 15px auto;
+                gap: 5px;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(10,auto);
+                grid-template-areas:
+                "header"
+                "imagencentral"
+                "EpisodiosUno" 
+                "ContextoUno" 
+                "EpisodiosDos" 
+                "ContextoDos"
+                "EpisodiosTres" 
+                "ContextoTres" 
+                "EpisodiosCuatro" 
+                "ContextoCuatro"
+                "EpisodiosCinco" 
+                "ContextoCinco" 
+                "EpisodiosSeis" 
+                "ContextoSeis"
+                "footer" 
+                "contacto";
+                .imagencentral{
+                    img{
+                        opacity: 0;
+                    }
+                }
+                .imagencentral{
+                    background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                    opacity: 0.5;
+                }
+                .menu{
+                    div{
+                        li{
+                            a{
+                                font-size: 15px;
+                                margin: auto;
+                            }
+                        }
+                    }
+        
+    
+    
+
+            }
+        }
+    }
+

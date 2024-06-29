@@ -1,0 +1,132 @@
+main{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas:
+    "header header header"
+    "fotos1 fotos1 historia"
+    "fotos1 fotos1 intro"
+    "anime fotos2 fotos2"
+    "personajeprincipal fotos2 fotos2"
+    "footer footer contacto";
+    animation-name: Entrada;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    .menu{
+        div{
+            li{
+                display: inline-block;
+                a{
+                    color: $texto-color;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 40px;
+                    margin: 30px auto;
+                    font-family: "Bebas Neue";
+                }
+            }
+        }
+    }
+    
+    .texto{
+        line-height: 1;
+        padding: 1rem;
+        font-family: "Sedan SC";
+        font-weight: 400;
+        font-style: normal;
+    }
+    .historia{
+        img{
+            width: 180px;
+            opacity: 0.5;
+        }
+    }
+    .header{
+        background-color: $base-color;
+        text-align: center;
+        padding: 10px;
+        grid-area: header;
+        border: solid 5px black;
+    }
+    .fotos1{
+        width: 100%;
+        background-color: $base-color-main;
+        color: $base-color-main;
+        text-align: center;
+        padding: 10px;
+        grid-area: fotos1;
+        border: solid 5px $border-color;
+    }
+    .historia{
+        background-color: $base-color-main;
+        color:$texto-color;
+        text-align: center;
+        padding: 10px;
+        grid-area: historia;
+        border: solid 5px $border-color;
+    }
+    .intro{
+        background-color: $base-color-main;
+        color: $texto-color;
+        text-align: center;
+        padding: 10px;
+        grid-area:  intro;
+        border: solid 5px rgb(37,37,37);
+    }
+    .anime{
+        background-color: $base-color-main;
+        color: $texto-color;
+        text-align: center;
+        padding: 10px;
+        grid-area: anime;
+        border: solid 5px $border-color;
+    }
+    .personajeprincipal{
+        background-color: $base-color-main;
+        color: $texto-color;
+        text-align: center;
+        padding: 10px;
+        grid-area: personajeprincipal;
+        img{
+            width: 35%;
+        }
+    }
+    .fotos2{
+        background-image: url(../Multimedia/isagifondo.jpg);
+        background-size: 100%;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        grid-area: fotos2;
+        border: solid 5px $border-color;
+        img{
+            width: 250px;
+        }
+    }
+    .footer{
+        background-color: $base-color;
+        color: blue;
+        padding: 10px;
+        grid-area: footer;
+        border: solid 5px $border-color;
+        text-align: center;
+        animation-name: un_giro;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-timing-function: ease-in;
+        animation-delay: 4s;
+    }
+    .Contacto{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: contacto;
+        border: solid 5px $border-color;
+        height: 100%;
+    }
+}

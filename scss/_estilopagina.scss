@@ -1,0 +1,193 @@
+.mains{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr repeat(5,1fr);
+    grid-template-areas:
+    "header header header"
+    "imagencentral imagencentral imagencentral"
+    "selec1 imagen1se texto1se"
+    "selec2 imagen2se texto2se"
+    "selec3 imagen3se texto3se"
+    "footer footer contacto";
+    animation-name: Entrada;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    
+    .imagencentral{
+        background-color: $base-color;
+        padding: 10px;
+        grid-area: imagencentral;
+        border: solid 5px rgb(0, 0, 0);
+        text-align: center;
+    }
+    .imagencentral img{
+        opacity: 0.5;
+        width: 100%;
+    }
+    .selec1{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: selec1;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .selec2{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: selec2;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .selec3{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: selec3;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .imagen1se{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: imagen1se;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .imagen2se{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: imagen2se;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .imagen3se{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: imagen3se;
+        border: solid 5px rgb(0, 0, 0);
+        text-align: center;
+    }
+    .texto1se{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: texto1se;
+        border: solid 5px $texto-color;
+        text-align: center;
+    }
+    .texto2se{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: texto2se;
+        border: solid 5px $texto-color;
+        text-align: center;
+    }
+    .texto3se{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: texto3se;
+        border: solid 5px $texto-color;
+        text-align: center;
+    }
+    .footer{
+        background-color: $base-color;
+        color:  $texto-color-main;
+        padding: 10px;
+        grid-area: footer;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .boton{
+        font-size: 300%;
+        font-family: "Bebas Neue";
+        font-weight: 400;
+        font-style: normal;
+    }
+    .equipos{
+        font-family: "Bebas Neue";
+        font-size: 150%;
+    }
+}
+
+    @media screen and (max-width: 1400px) {
+        .mains{
+            width: 95%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto;
+            grid-template-areas:
+            "header header"
+            "imagencentral imagencentral"
+            "selec1 texto1se"
+            "imagen1se imagen1se"
+            "selec2 texto2se"
+            "imagen2se imagen2se"
+            "selec3 texto3se"
+            "imagen3se imagen3se"
+            "footer contacto" 
+            ;
+            }
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central2.jpg);
+                opacity: 0.5;
+            }
+           
+        
+    
+    }
+    @media screen and (max-width: 1080px) {
+        .mains{
+            width: 95%;
+            height: 100%;
+            display: grid;
+            margin: 20px auto;
+            gap: 5px;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-areas:
+            "header"
+            "imagencentral"
+            "selec1" 
+            "texto1se"
+            "imagen1se"
+            "selec2" 
+            "texto2se"
+            "imagen2se"
+            "selec3" 
+            "texto3se"
+            "imagen3se"
+            "footer" 
+            "contacto";
+            }
+            .imagencentral img{
+                opacity: 0;
+            }
+            .imagencentral{
+                background-image: url(../Multimedia/imagen\ central\ 3.jpg);
+                opacity: 0.5;
+            }
+            .Contacto{
+                width: 50%;
+                text-align: center;
+                margin: auto;
+            }
+    
+    }

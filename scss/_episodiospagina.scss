@@ -1,0 +1,136 @@
+.MainEpi {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 0.5fr repeat(5,1fr);
+    grid-template-areas:
+    "header header header header"
+    "imagencentral imagencentral imagencentral imagencentral"
+    "EpisodiosUno ContextoUno EpisodiosDos ContextoDos"
+    "EpisodiosTres ContextoTres EpisodiosCuatro ContextoCuatro"
+    "EpisodiosCinco ContextoCinco EpisodiosSeis ContextoSeis"
+    "footer footer contacto contacto";
+    animation-name: Entrada;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    .EpiImagen{
+        width: 100%;
+    }
+    .imagencentral{
+        background-color: $base-color;
+        padding: 10px;
+        grid-area: imagencentral;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .imagencentral img{
+        opacity: 0.5;
+        width: 100%;
+    }
+    .EpisodiosUno{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosUno;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoUno{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: ContextoUno;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .EpisodiosDos{
+        background-color: $base-color;
+        color:  $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosDos;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoDos{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: ContextoDos;
+        border: solid 5px rgb(0, 0, 0);
+        text-align: center;
+    }
+    .EpisodiosTres{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosTres;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoTres{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: ContextoTres;
+        border: solid 5px $border-color;
+        text-align: center;
+
+    }
+    .EpisodiosCuatro{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosCuatro;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoCuatro{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: ContextoCuatro;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .EpisodiosCinco{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosCinco;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoCinco{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: ContextoCinco;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .EpisodiosSeis{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: EpisodiosSeis;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    .ContextoSeis{
+        background-color: $base-color;
+        color: $texto-color;
+        padding: 10px;
+        grid-area: ContextoSeis;
+        border: solid 5px $border-color;
+        text-align: center;
+    }
+    
+
+    
+
+}
+    
