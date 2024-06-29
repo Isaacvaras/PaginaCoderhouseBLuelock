@@ -584,7 +584,7 @@ main .Contacto {
   .main .logonav {
     width: 300px;
   }
-  .main .logomenu {
+  .main .logoMenu {
     width: 30px;
   }
   .main .menu div li a {
@@ -596,7 +596,7 @@ main .Contacto {
   .main {
     width: 100%;
     height: 100%;
-    margin: 20px auto;
+    margin: auto;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "header" "fotos1" "intro" "historia" "fotos2" "personaje principal" "anime" "contacto" "footer";
@@ -607,7 +607,7 @@ main .Contacto {
   .main .logonav {
     width: 200px;
   }
-  .main .logomenu {
+  .main .logoMenu {
     width: 20px;
   }
   .main .fotos2 {
@@ -633,7 +633,7 @@ main .Contacto {
   .main .logonav {
     width: 150px;
   }
-  .main .logomenu {
+  .main .logoMenu {
     width: 15px;
   }
   .main .fotos2 {
@@ -652,7 +652,7 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "header header" "imagencentral imagencentral" "selec1 texto1se" "imagen1se imagen1se" "selec2 texto2se" "imagen2se imagen2se" "selec3 texto3se" "imagen3se imagen3se" "footer contacto";
   }
@@ -698,7 +698,7 @@ main .Contacto {
   .mains .logonav {
     width: 300px;
   }
-  .mains .logomenu {
+  .mains .logoMenu {
     width: 30px;
   }
 }
@@ -707,11 +707,21 @@ main .Contacto {
     width: 100%;
     height: 100%;
     display: grid;
-    margin: 20px auto;
+    margin: auto;
     gap: 5px;
     grid-template-columns: auto;
     grid-template-rows: repeat(13, auto);
     grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .mains .header {
+    flex-direction: column;
+  }
+  .mains .texto1se .h1 {
+    font-size: 20px;
+  }
+  .mains .texto1se p {
+    font-size: 10px;
+    flex-direction: column;
   }
   .mains .imagencentral img {
     opacity: 0;
@@ -732,7 +742,7 @@ main .Contacto {
   .mains .logonav {
     width: 200px;
   }
-  .mains .logomenu {
+  .mains .logoMenu {
     width: 20px;
   }
 }
@@ -741,11 +751,14 @@ main .Contacto {
     width: 100%;
     height: 100%;
     display: grid;
-    margin: 15px auto;
+    margin: auto;
     gap: 5px;
     grid-template-columns: auto;
     grid-template-rows: repeat(13, auto);
     grid-template-areas: "header" "imagencentral" "selec1" "texto1se" "imagen1se" "selec2" "texto2se" "imagen2se" "selec3" "texto3se" "imagen3se" "footer" "contacto";
+  }
+  .mains .header {
+    flex-direction: column;
   }
   .mains .imagencentral img {
     opacity: 0;
@@ -766,7 +779,7 @@ main .Contacto {
   .mains .logonav {
     width: 150px;
   }
-  .mains .logomenu {
+  .mains .logoMenu {
     width: 15px;
   }
 }
@@ -793,6 +806,12 @@ main .Contacto {
     font-size: 35px;
     margin: auto;
   }
+  .partidopag .logonav {
+    width: 300px;
+  }
+  .partidopag .logoMenu {
+    width: 30px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .partidopag {
@@ -813,6 +832,12 @@ main .Contacto {
     font-size: 30px;
     margin: auto;
   }
+  .partidopag .logonav {
+    width: 200px;
+  }
+  .partidopag .logoMenu {
+    width: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .partidopag {
@@ -832,6 +857,12 @@ main .Contacto {
   .partidopag .menu div li a {
     font-size: 20px;
     margin: auto;
+  }
+  .partidopag .logonav {
+    width: 150px;
+  }
+  .partidopag .logoMenu {
+    width: 15px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -877,6 +908,12 @@ main .Contacto {
     font-size: 35px;
     margin: auto;
   }
+  .MainEpi .logonav {
+    width: 300px;
+  }
+  .MainEpi .logoMenu {
+    width: 30px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .MainEpi {
@@ -900,6 +937,12 @@ main .Contacto {
     font-size: 30px;
     margin: auto;
   }
+  .MainEpi .logonav {
+    width: 200px;
+  }
+  .MainEpi .logoMenu {
+    width: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .MainEpi {
@@ -922,6 +965,12 @@ main .Contacto {
   .MainEpi .menu div li a {
     font-size: 20px;
     margin: auto;
+  }
+  .MainEpi .logonav {
+    width: 150px;
+  }
+  .MainEpi .logoMenu {
+    width: 15px;
   }
 }
 @media screen and (max-width: 320px) {
