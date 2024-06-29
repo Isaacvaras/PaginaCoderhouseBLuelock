@@ -908,7 +908,7 @@ main .Contacto {
     display: grid;
     margin: 20px auto;
     gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
   }
@@ -931,7 +931,7 @@ main .Contacto {
     display: grid;
     margin: 15px auto;
     gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(10, auto);
     grid-template-areas: "header" "imagencentral" "EpisodiosUno" "ContextoUno" "EpisodiosDos" "ContextoDos" "EpisodiosTres" "ContextoTres" "EpisodiosCuatro" "ContextoCuatro" "EpisodiosCinco" "ContextoCinco" "EpisodiosSeis" "ContextoSeis" "footer" "contacto";
   }
